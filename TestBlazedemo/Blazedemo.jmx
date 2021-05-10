@@ -31,7 +31,7 @@
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Test Data CSV File -- Path pointed to PC JMeter Test Runs" enabled="false">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Test Data CSV File -- Path pointed to PC JMeter Test Runs" enabled="true">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding">UTF-8</stringProp>
         <stringProp name="filename">C:\jmeter-base\TestBlazedemo\TestData.csv</stringProp>
@@ -44,7 +44,7 @@
         <stringProp name="TestPlan.comments">USe this Test data Configuration for executions in your LAPTOP via JMeter GUI</stringProp>
       </CSVDataSet>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Test Data CSV File --- Path pointed to DOCKER Volume" enabled="true">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Test Data CSV File --- Path pointed to DOCKER Volume" enabled="false">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding">UTF-8</stringProp>
         <stringProp name="filename">/workspace/TestBlazedemo/TestData.csv</stringProp>
@@ -215,7 +215,7 @@
                   </elementProp>
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://${host}/</stringProp>
+                    <stringProp name="Header.value">${https}://${blazeURL}/</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-Site" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
@@ -378,7 +378,7 @@
                   </elementProp>
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://${host}/reserve.php</stringProp>
+                    <stringProp name="Header.value">${https}://${blazeURL}/reserve.php</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-Site" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
@@ -547,7 +547,7 @@
                   </elementProp>
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://${host}/purchase.php</stringProp>
+                    <stringProp name="Header.value">${https}://${blazeURL}/purchase.php</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-Site" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
